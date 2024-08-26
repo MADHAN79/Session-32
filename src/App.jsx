@@ -28,21 +28,21 @@ const App = () => {
         title: "SamsungUniverse9",
         description: "Samsung's new variant which goes beyond Galaxy to the Universe",
         price: 1249,
-        thumbnail: "../src/assets/SU9.png",
+        thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC58rgBop8gsmuiGyJMvEIWFyfuTU81ug3GUI9wfss8w&s",
       },
       {
         id: 4,
         title: "OPPO F19",
         description: "OPPO F19 is officially announced on April 2021.",
         price: 280,
-        thumbnail: "../src/assets/OPPOF19.png",
+        thumbnail: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ2UK1b5765xyavMscwT3eAw9BQLl5xsthSabMRZxjiVVjkDz0E",
       },
       {
         id: 5,
         title: "Huawei P30",
         description: "Huawei’s re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
         price: 499,
-        thumbnail: "../src/assets/image.png",
+        thumbnail: "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/list-image/phones/p30-pro/P30Pro_skyblue.png",
       }
     ];
 
