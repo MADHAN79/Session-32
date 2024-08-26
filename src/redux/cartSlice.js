@@ -61,7 +61,7 @@ const cartSlice = createSlice({
       state.cartItems = action.payload.map(item => ({
         ...item,
         quantity: parseInt(item.quantity, 10) || 0,
-        totalPrice: parseFloat(item.totalPrice || item.price), // Ensure totalPrice is a number
+        totalPrice: parseFloat(0), // Ensure totalPrice is a number
       }));
       state.totalQuantity = state.cartItems.reduce((total, item) => total + item.quantity, 0);
       state.totalAmount = state.cartItems.reduce((total, item) => total + parseFloat(item.totalPrice), 0);
