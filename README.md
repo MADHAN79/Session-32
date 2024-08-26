@@ -1,9 +1,14 @@
-# React + Vite
+### Session - 32 Task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Redux Cart Website
 
-Currently, two official plugins are available:
+### Tech used:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# Session-32" 
+1. React18
+2. TailwindCSS
+3. Redux Toolkit
+
+
+Project Brief:
+    
+    This project utilizes the Redux Toolkit state management concept for efficient updation of each product's quantity and price states across the website.
