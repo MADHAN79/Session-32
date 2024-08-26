@@ -2,21 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+    text-decoration: dotted;
+    text-underline-offset: 6px;
+}
+
 .products{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 img{
     width: 230px;
     height: 250px;
+    border-radius: 10px;
 }
 
 .product-item{
+    color: black;
     width: 230px;
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
-    background-color: rgba(87, 87, 87, 0.137);
+    background-color: rgb(255, 255, 255);
+}
+
+.add-btn:hover{
+    background-color: rgb(0, 170, 0);
+}
+
+.reduce-btn:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+.remove-btn:hover{
+    background-color: red;
+}
+
+@media (max-width:450px) {
+    .product-item{
+        width: 320px;
+        align-items: center;
+    }
+
+    img{
+        margin: 0% 12%;
+    }
+
 }

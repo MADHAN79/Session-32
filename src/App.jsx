@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setCartItems } from './redux/cartSlice';
@@ -26,14 +25,14 @@ const App = () => {
       },
       {
         id: 3,
-        title: "Samsung Universe 9",
+        title: "SamsungUniverse9",
         description: "Samsung's new variant which goes beyond Galaxy to the Universe",
         price: 1249,
         thumbnail: "../src/assets/SU9.png",
       },
       {
         id: 4,
-        title: "OPPOF19",
+        title: "OPPO F19",
         description: "OPPO F19 is officially announced on April 2021.",
         price: 280,
         thumbnail: "../src/assets/OPPOF19.png",

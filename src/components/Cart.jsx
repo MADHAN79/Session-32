@@ -14,44 +14,45 @@ const Cart = () => {
   const displayTotalAmount = totalAmount || 0;
 
   return (
-    <div className="p-4">
-      <h2 className="text-2xl font-bold">Shopping Cart</h2>
-      <div className="products mt-4">
+    <div className="container p-4">
+      <h2 className="text-2xl font-bold underline">REDUX SHOPPING CART</h2>
+      <div className="products mt-12">
         {cartItems.map(item => (
           <div key={item.id} className="product-item mb-4">
             <img src={item.thumbnail} alt={item.title} />
-            <div className="flex-1 ml-4">
+            <div className="flex flex-row justify-evenly space-x-6 mt-4">
               <h3 className="font-semibold">{item.title}</h3>
-              <p className="text-gray-600">${item.price}</p>
+              <p className="text-green-950 font-bold">${item.price}</p>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center justify-end mt-4">
               <button
                 onClick={() => dispatch(decreaseQuantity(item))}
-                className="px-2 py-1 bg-gray-200 rounded"
+                className="reduce-btn px-2 py-1 bg-red-600 text-white font-bold rounded-2xl"
               >
                 -
               </button>
               <span className="px-4">{item.quantity}</span>
               <button
                 onClick={() => dispatch(increaseQuantity(item))}
-                className="px-2 py-1 bg-gray-200 rounded"
+                className="add-btn px-2 py-1 bg-green-700 text-white font-bold rounded-2xl"
               >
                 +
               </button>
             </div>
-            <div className="ml-4">
+            <div className="ml-2 justify-center">
+              <p>SubTotal</p>
               <p className="font-semibold">${item.totalPrice.toFixed(2)}</p>
             </div>
             <button
               onClick={() => dispatch(removeFromCart(item))}
-              className="text-red-500 ml-4"
+              className="remove-btn font-thin px-2 text-white bg-gray-950 ml-36 rounded-2xl"
             >
               Remove
             </button>
           </div>
         ))}
       </div>
-      <div className="mt-4 border-t pt-4">
+      <div className="mt-4 ml-4 border-t pt-4">
         <h3 className="text-xl font-bold">Total Quantity: {totalQuantity}</h3>
         <h3 className="text-xl font-bold">Total Amount: ${displayTotalAmount.toFixed(2)}</h3>
       </div>
