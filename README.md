@@ -9,7 +9,7 @@
 3. Redux Toolkit
 
 
-Project Brief:
+Project Brief : 
     This project utilizes the Redux Toolkit's state management concept for efficient updation of each product's quantity and price states across the website.
 
 
